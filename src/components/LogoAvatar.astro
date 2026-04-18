@@ -1,0 +1,25 @@
+<div>
+  <p aria-hidden="true">Vaibhav Bhole</p>
+</div>
+
+<style lang="scss">
+  @use '../assets/scss/base/breakpoint' as *;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  img {
+    max-width: 3rem;
+  }
+
+  p {
+    display: none;
+
+    @include breakpoint(600) {
+      display: block;
+    }
+  }
+</style>

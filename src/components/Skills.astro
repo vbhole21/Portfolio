@@ -1,0 +1,100 @@
+---
+import SkillBar from './SkillBar.astro';
+---
+
+<section>
+  <div
+    class="section-divider"
+    aria-hidden="true"
+  >
+    Skills
+  </div>
+  <div class="container">
+    <div class="space-content animate">
+      <h2>
+        <span lang="en">These are my skills</span>
+      </h2>
+      <p>
+        I am a dedicated <strong>Unity Game Developer</strong> with 1 year of professional experience in the gaming industry. My expertise lies in crafting scalable and efficient code using <strong>C#</strong>, while pushing the boundaries of what's possible in the Unity engine. I specialize in game physics, character controllers, and creating engaging gameplay loops.
+      </p>
+      <p>
+        I have a deep understanding of the Unity ecosystem, including the Universal Render Pipeline (URP), Shader Graph, and VFX Graph to bring visual excellence to every project. My goal is to build games that not only play well but also offer a seamless and polished user experience. I am constantly exploring new technologies like AI in games and multiplayer frameworks to stay ahead in the ever-evolving game dev landscape.
+      </p>
+    </div>
+    <div class="skills animate">
+      <SkillBar
+        icon="mdi:language-csharp"
+        label="C#"
+        progress="90"
+      />
+      <SkillBar
+        icon="mdi:cube-outline"
+        label="Unity Engine"
+        progress="90"
+      />
+      <SkillBar
+        icon="mdi:atom"
+        label="Game Physics"
+        progress="85"
+      />
+      <SkillBar
+        icon="mdi:gamepad-variant"
+        label="Gameplay Programming"
+        progress="85"
+      />
+      <SkillBar
+        icon="mdi:pencil-ruler"
+        label="UI/UX for Games"
+        progress="80"
+      />
+      <SkillBar
+        icon="mdi:animation-play"
+        label="Animation Systems"
+        progress="80"
+      />
+      <SkillBar
+        icon="mdi:git"
+        label="Version Control (Git)"
+        progress="85"
+      />
+      <SkillBar
+        icon="mdi:brain"
+        label="Game AI"
+        progress="70"
+      />
+      <SkillBar
+        icon="mdi:database"
+        label="Data Management"
+        progress="75"
+      />
+      <SkillBar
+        icon="mdi:bug-check"
+        label="Debugging & Optimization"
+        progress="85"
+      />
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  section {
+    margin-top: 20vh;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.75rem;
+  }
+</style>

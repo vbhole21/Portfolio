@@ -1,0 +1,25 @@
+{
+  "name": "Portfolio Mark",
+  "description": "I'm a Frontend Developer with a love for Web Accessibility",
+  "version": "1.7.0",
+  "author": "Mark Teekman",
+  "homepage": "https://www.markteekman.nl/",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@iconify-json/mdi": "^1.2.3",
+    "accessible-astro-components": "^5.0.1",
+    "astro-icon": "^1.1.5",
+    "astro-webrings": "^0.1.3",
+    "atropos": "^2.0.2",
+    "canvas-confetti": "^1.9.4"
+  },
+  "devDependencies": {
+    "astro": "^5.15.3",
+    "sass": "^1.93.3"
+  }
+}

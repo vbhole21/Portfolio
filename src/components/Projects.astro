@@ -1,0 +1,91 @@
+---
+import ProjectCard from './ProjectCard.astro';
+---
+
+<section>
+  <div
+    class="section-divider"
+    aria-hidden="true"
+  >
+    Projects
+  </div>
+  <div class="container">
+    <div class="space-content animate">
+      <h2>
+        <span lang="en">Projects I do as a hobby</span>
+      </h2>
+      <p>
+        I love building interactive and engaging games during my free time. These projects range from fast-paced shooters to complex puzzle games, each helping me master different aspects of game development like state management, AI, and optimization.
+      </p>
+      <p>
+        Most of my work is built using <strong>Unity</strong> and <strong>C#</strong>. I focus on creating smooth gameplay mechanics and polished visuals to ensure a fun experience for the players.
+      </p>
+      <p>
+        Check out some of my featured projects below!
+      </p>
+    </div>
+    <div class="projects animate">
+      <ProjectCard
+        url="https://play.google.com/store/apps/details?id=com.techflux.GALAXY_SHOOTER&hl=en_IN"
+        title="Galaxy Shooter"
+        description="A fast-paced 2D space shooter with power-ups, enemy AI, and high-score systems."
+        tags={['Unity', 'C#', '2D', 'Action']}
+        video="/Galexy_shooter.mp4"
+      />
+      <ProjectCard
+        url="https://play.google.com/store/apps/details?id=com.Techflux.Pick_N_Play&hl=en_IN"
+        title="Pick and Play"
+        description="A mobile-responsive casual game focused on simple yet addictive mechanics."
+        tags={['Unity', 'Mobile', 'C#']}
+        video="/Pick and play.mp4"
+      />
+      <ProjectCard
+        url="#"
+        title="ERC Bumping Car"
+        description="A physics-based car game featuring realistic bumping mechanics and arena gameplay."
+        tags={['Unity', 'Physics', '3D']}
+        video="/Record_2026-03-16-14-39-40.mp4"
+      />
+      <ProjectCard
+        url="#"
+        title="Rope Twisted Puzzle"
+        description="A challenging logic puzzle game involving intricate rope physics and untangling mechanics."
+        tags={['Unity', 'Puzzle', 'Physics']}
+      />
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5rem;
+
+    @media (min-width: 1000px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .projects {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+
+    @media (min-width: 1000px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .projects::after {
+    content: '';
+    position: absolute;
+    width: 276px;
+    height: 252px;
+    background-repeat: no-repeat;
+    bottom: -230px;
+    left: -100px;
+    background-image: url('/dotgrid-projects.png');
+  }
+</style>
